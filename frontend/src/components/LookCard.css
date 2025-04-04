@@ -1,0 +1,68 @@
+/* src/components/LookCard.css */
+.look-card {
+    background-color: #2a2a2e;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .look-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .look-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+  }
+  
+  .look-actions {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .edit-look-btn,
+  .delete-look-btn {
+    background: none;
+    border: none;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .edit-look-btn:hover,
+  .delete-look-btn:hover,
+  .add-look-to-cart-btn:hover {
+    color: #fff;
+  }
+  
+  .look-images {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  
+  .look-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  .add-look-to-cart-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ccc;
+    transition: transform 0.3s ease;
+  }
+  

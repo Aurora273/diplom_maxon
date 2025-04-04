@@ -1,0 +1,122 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: #f8f8f8;
+  height: 60px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: relative; /* Добавлено для позиционирования центра */
+}
+.header-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;          /* задаём нужный цвет */
+    text-decoration: none; /* убираем подчеркивание */
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  
+  .nav-list li {
+    margin-left: 20px;
+    position: relative;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #007BFF;
+  }
+  
+  /* Стили для кнопки поиска */
+  .search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    padding: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .search-button:hover {
+    transform: scale(1.1);
+    color: #007BFF;
+  }
+  
+  .search-form {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    overflow: hidden;
+    width: 0;
+    opacity: 0;
+    transition: width 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .search-form.open {
+    width: 200px;
+    opacity: 1;
+  }
+  
+  .search-form input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    width: 100%;
+  }
+  
+  /* Стили для кнопки аккаунта */
+  .account-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    transition: transform 0.3s ease;
+  }
+  
+  .account-button:hover {
+    transform: scale(1.1);
+    color: #007BFF;
+  }
+  
+  /* Стили для кнопки "Админ панель" */
+  .admin-button {
+    background-color: #1a1a1a;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .admin-button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+  }
+  

@@ -1,0 +1,86 @@
+.twofa-toggle,
+.twofa-toggle-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.twofa-label {
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+/* Стиль переключателя (iOS‑style) */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 3px;
+  top: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(30px);
+}
+
+.slider.round {
+  border-radius: 30px;
+}
+
+.slider.round:after {
+  content: "OFF";
+  color: #fff;
+  position: absolute;
+  font-size: 12px;
+  top: 7px;
+  right: 10px;
+}
+
+input:checked + .slider.round:after {
+  content: "ON";
+  left: 10px;
+  right: auto;
+}
+.qr-code {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    border: 1px solid #555;
+    border-radius: 8px;
+  }

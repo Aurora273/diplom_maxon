@@ -1,0 +1,52 @@
+/* src/pages/LooksPage.css */
+.looks-page {
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #ddd;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .looks-page h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #fff;
+  }
+  
+  .add-look-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #444;
+    color: #ddd;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .add-look-btn:hover {
+    background-color: #555;
+  }
+  
+  .looks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .empty-message {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 30px;
+    color: #ccc;
+  }
+  
+  .error {
+    color: #ff6b6b;
+    text-align: center;
+    margin-top: 10px;
+  }
+  

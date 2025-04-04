@@ -1,0 +1,48 @@
+.catalog-page {
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #ddd;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.catalog-page h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: #fff;
+}
+
+/* Кнопка открытия сайдбара, теперь слева по центру */
+.open-sidebar-btn {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1100;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
+
+.open-sidebar-btn:hover {
+  background-color: #333;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.error {
+  text-align: center;
+  color: #ff6b6b;
+}

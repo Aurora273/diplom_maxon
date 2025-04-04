@@ -1,0 +1,51 @@
+/* Контейнер списка категорий */
+.category-list {
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+  
+  /* Элемент категории */
+  .category-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    padding: 2px 0;
+  }
+  
+  /* Кнопка плюсика для добавления вложенной категории */
+  .plus-icon {
+    background: none;
+    border: none;
+    color: #007BFF;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px;
+    transition: transform 0.2s ease;
+  }
+  
+  .plus-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Кнопка для добавления категории верхнего уровня */
+  .add-top-category-btn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-top-category-btn:hover {
+    background-color: #0056b3;
+  }
+  
